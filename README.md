@@ -1,5 +1,5 @@
 [![Workflow Status](https://github.com/CIAO-systems/grpc-utils-rs/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/CIAO-systems/grpc-utils-rs/actions/workflows/build-and-test.yml)
-[![GitHub License](https://img.shields.io/github/license/CIAO-systems/grpc-utils-rs?style=flat)](https://github.com/CIAO-systems/grpc-utils-rs?tab=Apache-2.0-1-ov-file)
+[![GitHub License](https://img.shields.io/github/license/CIAO-systems/grpc-utils-rs)](https://github.com/CIAO-systems/grpc-utils-rs?tab=Apache-2.0-1-ov-file)
 
 # Usage
 To use the library in your project, add it to the dependencies:
