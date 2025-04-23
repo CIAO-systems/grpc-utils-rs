@@ -1,0 +1,11 @@
+[package]
+name = "grpc-utils-rs"
+version = "0.1.0"
+description = "gRPC utilities for rust"
+edition = "2021"
+
+[dependencies]
+tonic = { version="0.12", features=["tls-roots"] }
+prost = "0.13"
+prost-types = "0.13"
+log = "0.4"
