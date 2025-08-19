@@ -63,6 +63,12 @@ pub struct BearerTokenInterceptor {
     token: String,
 }
 
+impl BearerTokenInterceptor {
+    pub fn new(token: String) -> Self {
+        BearerTokenInterceptor { token }
+    }
+}
+
 impl Interceptor for BearerTokenInterceptor {
     fn call(&mut self, mut req: tonic::Request<()>) -> Result<tonic::Request<()>, tonic::Status> {
         req.metadata_mut().insert(
@@ -165,5 +171,12 @@ mod tests {
         );
 
         assert_eq!(2, interceptors.lock().unwrap().len());
+    }
+
+    #[test]
+    fn test_bearer_token() {
+        let test_object = BearerTokenInterceptor::new("test-token".to_string());
+
+        assert_eq!("test-token", test_object.token);
     }
 }
